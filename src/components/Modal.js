@@ -12,7 +12,7 @@ const Modal = props => {
 
         <div 
             className="modalShade" 
-            onClick={ () => props.onDismiss( !props.modalState ) }
+            onClick={ () => props.onDismiss() }
         >
             <div className="modal">
 

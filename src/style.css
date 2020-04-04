@@ -9,7 +9,7 @@ a { text-decoration: none; color: #ff957a; transition: all ease-in .2s; }
 
 a:hover { color: #fff; }
 
-body { background-color: #365663; color: #fff; }
+body { background-color: #2e424a; color: #fff; }
 
 h1, h2, h2 a, h3, h4 { 
     font-family: 'Staatliches', sans-serif; 
@@ -29,9 +29,9 @@ p, .webBox, .articleBox {
 }
 
 h1 { 
-    font-size: 4rem; 
+    font-size: 5rem; 
     color: #ff957a; 
-    margin-bottom: 30px; 
+    margin-bottom: 60px; 
     transform: rotate(-6deg);
     display: inline-block;
 }
@@ -96,6 +96,13 @@ h3 { font-size: 30px; }
 .nav { padding: 50px 3%; }
 
 .content { min-height: 100vh;}
+
+.pageBg { 
+    padding: 50px 3%; 
+    background-attachment: fixed;
+    background-position: top right; 
+    background-repeat: no-repeat; 
+}
 
 
 

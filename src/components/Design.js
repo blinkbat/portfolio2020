@@ -9,8 +9,10 @@ import Modal from './Modal';
 const Design = () => {
 
 
+
     const [ modal, toggleModal ] = useState( false );
     const [ modalInfo, setModal ] = useState({ title: '', img: '' })
+
 
 
     const tempImgs = [
@@ -42,6 +44,13 @@ const Design = () => {
             setModal({ title, img });
             toggleModal( !modal );
 
+            // prevent background scroll while modal is open
+            const body = document.body.style;
+
+            body.height ? body.height = '' : body.height = '100vh';
+            body.overflowY ? body.overflowY = '' : body.overflowY = 'hidden';
+            body.paddingRight ? body.paddingRight = '' : body.paddingRight = '17px';
+
         }
 
     }
@@ -49,7 +58,7 @@ const Design = () => {
 
 
     return( 
-        <div style={{ background: '', padding: '50px 3%' }}>
+        <div style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1550537687-c91072c4792d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80")' }} className="pageBg">
             <h1>design</h1>
             <br />
             <p>
@@ -63,6 +72,7 @@ const Design = () => {
                     // TODO: make these cool modals or something
 
                    return( 
+
                         <div key={ index } onClick={ () => { showModal( 'testing', img ) } }>
                             <img src={ img } alt={ `gallery${ index }` } />
                         </div>
@@ -73,9 +83,9 @@ const Design = () => {
 
             </section>
 
-            { modal ? 
+            { modal ? // conditional rendering of modal 
                 <Modal 
-                    onDismiss={ toggleModal } 
+                    onDismiss={ showModal } 
                     modalState={ modal } 
                     title={ modalInfo.title }
                     img={ modalInfo.img }

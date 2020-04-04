@@ -41,7 +41,7 @@ const Writing = () => {
     ];
 
     return( 
-        <div style={{ background: '', padding: '50px 3%' }}>
+        <div style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1480506132288-68f7705954bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1093&q=80")' }} className="pageBg">
             <h1>writing</h1>
             <br />
             <p>

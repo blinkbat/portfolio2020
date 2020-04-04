@@ -56,7 +56,7 @@ const Web = () => {
 
 
     return( 
-        <div style={{ background: '', padding: '50px 3%' }}>
+        <div style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1550645612-83f5d594b671?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&q=80")' }} className="pageBg">
             <h1>web</h1>
             <br />
             <p>
