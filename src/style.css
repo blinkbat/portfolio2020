@@ -99,9 +99,9 @@ h3 { font-size: 30px; }
 
 .pageBg { 
     padding: 50px 3%; 
-    background-attachment: fixed;
     background-position: top right; 
     background-repeat: no-repeat; 
+    min-height: 100vh;
 }
 
 

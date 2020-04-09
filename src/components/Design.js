@@ -58,7 +58,11 @@ const Design = () => {
 
 
     return( 
+
+        // IDEA: maybe a random gradient color top right for pageBg
+
         <div style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1550537687-c91072c4792d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80")' }} className="pageBg">
+
             <h1>design</h1>
             <br />
             <p>

@@ -8,7 +8,6 @@ import React from 'react';
 const Web = () => {
 
     const webData = [
-
         { 
             img: require( '../images/ME-big.png' ),
             name: 'Manhattan Eye', 
@@ -42,7 +41,7 @@ const Web = () => {
         { 
             img: require( '../images/PM-big.png' ),
             name: 'Project Maia', 
-            descrip: 'Project Maia was a fun excercise in using data-driven algorithms to give advice and feedback about companies\' social media strategy.',
+            descrip: 'Project Maia was a fun exercise in using data-driven algorithms to give advice and feedback about companies\' social media strategy.',
             link: ''
         },
         { 
@@ -51,7 +50,6 @@ const Web = () => {
             descrip: 'A site showcasing the diverse developments of one of the biggest real estate investment companies in South Florida. Built with WordPress.',
             link: 'http://greccorp.com'
         }
-
     ];
 
 
