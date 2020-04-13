@@ -13,6 +13,7 @@ const Welcome = () => {
             <h1>hello world</h1>
             <br />
             <h3>my first blog post</h3>
+            <br />
             <p>I'll have some intro text and a fun GIF in here.</p>
         </div>
     );

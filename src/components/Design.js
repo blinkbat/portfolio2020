@@ -73,8 +73,6 @@ const Design = () => {
 
                 { tempImgs.map( ( img, index ) => {
 
-                    // TODO: make these cool modals or something
-
                    return( 
 
                         <div key={ index } onClick={ () => { showModal( 'testing', img ) } }>
@@ -87,7 +85,7 @@ const Design = () => {
 
             </section>
 
-            { modal ? // conditional rendering of modal 
+            { modal ? // conditional rendering of modal via state
                 <Modal 
                     onDismiss={ showModal } 
                     modalState={ modal } 
