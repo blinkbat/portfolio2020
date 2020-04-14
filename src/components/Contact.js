@@ -7,15 +7,17 @@ import React, { useState } from 'react';
 
 const Contact = () => {
 
-    const [ formInfo, setInfo ] = useState({ email: '', message: '' })
+    const [ formInfo, setInfo ] = useState({ email: '', message: '' });
 
     const handleInput = e => {
-        const { name, value } = e.target
-        setInfo({ ...formInfo, [name]: value })
+        const { name, value } = e.target;
+        setInfo({ ...formInfo, [name]: value });
     }
 
+    const bgImg = require( '../images/bg-contact.jpg' );
+
     return( 
-        <div style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1526554850534-7c78330d5f90?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80")' }} className="pageBg">
+        <div style={{ backgroundImage: `url(${ bgImg })` }} className="pageBg">
             <h1>contact</h1>
             <br />
             <p>I love hearing from the internet. Reach out to me below.</p>

@@ -12,6 +12,7 @@ import Design from './components/Design';
 import Writing from './components/Writing';
 import Cv from './components/Cv';
 import Contact from './components/Contact';
+import ScrollToTop from './components/ScrollToTop';
 
 import './style.css';
 
@@ -19,6 +20,9 @@ import './style.css';
 ReactDOM.render( 
 
     <BrowserRouter>
+
+        <ScrollToTop />
+
         <App>
             <Switch>
 

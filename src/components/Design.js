@@ -34,12 +34,10 @@ const Design = () => {
         'https://images.unsplash.com/photo-1585662634386-6c160dfda393?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80'
     ]
 
-
-
     const showModal = ( title, img ) => {
 
         // do nothing on mobile, corresponds to css breakpt
-        if( window.innerWidth > 1024 ) {
+        if( window.innerWidth > 1200 ) {
 
             setModal({ title, img });
             toggleModal( !modal );
@@ -55,13 +53,13 @@ const Design = () => {
 
     }
 
-
+    const bgImg = require( '../images/bg-design.jpg' );
 
     return( 
 
         // IDEA: maybe a random gradient color top right for pageBg
 
-        <div style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1550537687-c91072c4792d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80")' }} className="pageBg">
+        <div style={{ backgroundImage: `url(${ bgImg })` }} className="pageBg">
 
             <h1>design</h1>
             <br />

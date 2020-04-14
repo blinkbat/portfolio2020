@@ -16,6 +16,7 @@ const Nav = () => {
             <Link to="/"><h2>david a. bennett</h2></Link>
 
             <ul>
+                <Link to="/"><li>blog</li></Link>
                 <Link to="/web"><li>web</li></Link>
                 <Link to="/design"><li>design</li></Link>
                 <Link to="/writing"><li>writing</li></Link>

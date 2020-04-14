@@ -1,7 +1,7 @@
 
 
 
-/************************** SITEWIDE */
+/************************** SITEWIDE & UTILITY */
 
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Glegoo', sans-serif; }
 
@@ -39,13 +39,20 @@ h1, h2, h2 a, h3, h4 {
 }
 
 p, .webBox, .articleBox, .col-1-3, .col-2-3 { 
-    background-color: rgba(62,92,103, .7); 
+    background-color: rgba(60,80,90, .8); 
     border-radius: 5px;
     padding: 20px;
     display: inline-block;
-    max-width: 650px;
+    max-width: 750px;
     font-size: 1.1rem;
-    line-height: 1.8rem;
+    line-height: 1.9rem;
+}
+
+code { 
+    padding: 5px 5px; 
+    border-radius: 3px; 
+    background-color: rgba(0,0,0, .3);
+    font-family: monospace;
 }
 
 h1 { 
@@ -123,6 +130,7 @@ h4 { font-size: 24px; }
     padding: 60px 3%; 
     background-position: top right; 
     background-repeat: no-repeat; 
+    background-attachment: fixed;
     min-height: 100vh;
 }
 
