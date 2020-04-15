@@ -45,7 +45,7 @@ const Contact = () => {
             <p>I love hearing from the internet. Reach out to me below.</p>
             <br /><br />
 
-            <p>
+            <p data-test="form">
 
                 <input 
                     name="email"
