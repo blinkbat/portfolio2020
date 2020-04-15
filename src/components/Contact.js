@@ -7,8 +7,12 @@ import React, { useState } from 'react';
 
 const Contact = () => {
 
+    // state handlers
     const [ formInfo, setInfo ] = useState({ email: '', message: '' });
 
+
+
+    // helpers
     const handleInput = e => {
         const { name, value } = e.target;
         setInfo({ ...formInfo, [name]: value });
@@ -16,6 +20,24 @@ const Contact = () => {
 
     const bgImg = require( '../images/bg-contact.jpg' );
 
+    const handleFormSubmit = () => {
+
+        const { email, message } = formInfo;
+
+        if(
+            /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test( email )
+            && message
+        ) {
+            alert( 'valid stuff.' );
+        } else {
+            alert( 'N0T cool man!' );
+        }
+
+    }
+
+
+
+    // render
     return( 
         <div style={{ backgroundImage: `url(${ bgImg })` }} className="pageBg">
             <h1>contact</h1>
@@ -46,11 +68,7 @@ const Contact = () => {
                 <input 
                     type="submit" 
                     value="send it" 
-                    onClick={ () => {
-
-                        console.log( 'Submitting...', formInfo );
-
-                    } }
+                    onClick={ handleFormSubmit }
                 />
 
             </p>

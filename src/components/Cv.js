@@ -21,22 +21,22 @@ const Cv = () => {
             <h3>SELECTED PROFESSIONAL EXPERIENCE</h3>
             <br />
 
-            <div style={{ display: "flex", alignItems: "center" }}>
+            <div className="flexCtr">
                 <div className="col-1-3">
                     <h4>Nov 2018 – Current</h4>
                 </div>
-                <p className="col-2-3">
+                <div className="col-2-3">
                     <span className="pinkTxt">Full-Stack Web Development Teaching Assistant, Trilogy Education, University of Miami, FL</span>
                     <br /><br /> 
-                    &middot; Assisted students with a full-stack curriculum covering JavaScript with ES6, React with Redux, Express.js, Node.js, MySQL and Sequelize, MongoDB and Mongoose, HTML5, CSS3, jQuery, PHP with Laravel, HTTP &amp; MVC standards, web security, APIs, networking, basic CS, and more.
-                </p>
+                    Assisted students with a full-stack curriculum covering JavaScript with ES6, React with Redux, Express.js, Node.js, MySQL and Sequelize, MongoDB and Mongoose, HTML5, CSS3, jQuery, PHP with Laravel, HTTP &amp; MVC standards, web security, APIs, networking, basic CS, and more.
+                </div>
             </div>
 
-            <div style={{ display: "flex", alignItems: "center" }}>
+            <div className="flexCtr">
                 <div className="col-1-3">
                     <h4>Apr 2017 – Current</h4>
                 </div>
-                <p className="col-2-3">
+                <div className="col-2-3">
                     <span className="pinkTxt">Full-Stack Web Developer, WebLift, Miami, FL</span>
                     <br /><br />   
                     &middot; Created a variety of applications for clients, including JavaScript-based splash pages, custom PHP buildouts, WordPress integrations, static landing pages, and more.
@@ -69,14 +69,14 @@ const Cv = () => {
                         </a></li>
                     </ul>
                     ...and many more.
-                </p>
+                </div>
             </div>
 
-            <div style={{ display: "flex", alignItems: "center" }}>
+            <div className="flexCtr">
                 <div className="col-1-3">
                     <h4>Apr 2017 – Current</h4>
                 </div>
-                <p className="col-2-3">
+                <div className="col-2-3">
                     <span className="pinkTxt">Freelance Full-Stack Web Developer, Miami, FL</span>
                     <br /><br />   
                     &middot; Development in ES6 JavaScript, HTML5 &amp; CSS3, Node.js, etc.
@@ -98,64 +98,64 @@ const Cv = () => {
                         <li>Opportune Media</li>
                     </ul>
                     ...and many more.
-                </p>
+                </div>
             </div>
 
-            <div style={{ display: "flex", alignItems: "center" }}>
+            <div className="flexCtr">
                 <div className="col-1-3">
                     <h4>Jan 2014 – Current</h4>
                 </div>
-                <p className="col-2-3">
+                <div className="col-2-3">
                     <span className="pinkTxt">Music &amp; Culture Contributor</span>
                     <br /><br />   
                     &middot; Art listings curator for the <a href="http://biscaynetimes.com/" target="_blank" rel="noopener noreferrer">Biscayne Times</a>.
                     <br />
                     &middot; Contributed dozens of culture articles ranging from music to fine art and beyond, as well as article illustrations, for publications like the <a href="https://www.miaminewtimes.com/" target="_blank" rel="noopener noreferrer">Miami New Times</a>, Kill Screen, Vice, and Artlurker.
-                </p>
+                </div>
             </div>
 
-            <div style={{ display: "flex", alignItems: "center" }}>
+            <div className="flexCtr">
                 <div className="col-1-3">
                     <h4>Jan 2013 – Apr 2017</h4>
                 </div>
-                <p className="col-2-3">
+                <div className="col-2-3">
                     <span className="pinkTxt">Gallerist, Graphic Designer, and Web Developer, Etra Fine Art, Wynwood, Miami, FL</span>
                     <br /><br />   
                     &middot; Managed and curated a fine art gallery, designed ads, brochures, and other materials, maintained gallery web presence.
-                </p>
+                </div>
             </div>
             <br /><br/>
 
             <h3>EDUCATION</h3>
             <br />
 
-            <div style={{ display: "flex", alignItems: "center" }}>
+            <div className="flexCtr">
                 <div className="col-1-3">
                     <h4>Jan 2017 – Apr 2017</h4>
                 </div>
-                <p className="col-2-3">
+                <div className="col-2-3">
                     <span className="pinkTxt">Wyncode Academy</span>
                     <br /><br />   
                     &middot; Full-Stack Web Development Intensive, Part-Time Cohort 1, Miami, FL
-                </p>
+                </div>
             </div>
 
-            <div style={{ display: "flex", alignItems: "center" }}>
+            <div className="flexCtr">
                 <div className="col-1-3">
                     <h4>Aug 2006 – Jun 2010</h4>
                 </div>
-                <p className="col-2-3">
+                <div className="col-2-3">
                     <span className="pinkTxt">New College of Florida</span>
                     <br /><br />   
                     &middot; BA, Area of Concentration in Art (Honors College of Florida), Sarasota, FL
-                </p>
+                </div>
             </div>
             <br /><br/>
 
             <h3>SKILLSET</h3>
             <br />
 
-            <p>
+            <div className="col-2-3">
                 &middot; React 16 with Redux, Context, Hooks<br />
                 &middot; JavaScript (ES6) with jQuery<br />
                 &middot; PHP7 with Laravel<br />
@@ -169,7 +169,7 @@ const Cv = () => {
                 &middot; Google Analytics, AdWords, Search Console, etc.<br />
                 &middot; API Usage (Facebook Graph API, Google OAuth, etc.)<br />
                 &middot; Digital video and animation (Final Cut Pro, Adobe After Effects)<br />
-            </p>
+            </div>
 
         </div>
     );

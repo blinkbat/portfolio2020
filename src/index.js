@@ -14,7 +14,7 @@ import Cv from './components/Cv';
 import Contact from './components/Contact';
 import ScrollToTop from './components/ScrollToTop';
 
-import './style.css';
+import './style.scss';
 
 
 ReactDOM.render( 

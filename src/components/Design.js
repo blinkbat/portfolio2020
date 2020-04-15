@@ -8,13 +8,13 @@ import Modal from './Modal';
 
 const Design = () => {
 
-
-
+    // state handlers
     const [ modal, toggleModal ] = useState( false );
     const [ modalInfo, setModal ] = useState({ title: '', img: '' })
 
 
 
+    // data
     const tempImgs = [
         'https://images.unsplash.com/photo-1558981852-426c6c22a060?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80',
         'https://images.unsplash.com/photo-1585662634386-6c160dfda393?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
@@ -34,6 +34,9 @@ const Design = () => {
         'https://images.unsplash.com/photo-1585662634386-6c160dfda393?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80'
     ]
 
+
+
+    // helpers
     const showModal = ( title, img ) => {
 
         // do nothing on mobile, corresponds to css breakpt
@@ -55,6 +58,9 @@ const Design = () => {
 
     const bgImg = require( '../images/bg-design.jpg' );
 
+
+
+    // render
     return( 
 
         // IDEA: maybe a random gradient color top right for pageBg
