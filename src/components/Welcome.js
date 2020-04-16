@@ -2,6 +2,7 @@
 
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 
@@ -11,14 +12,22 @@ const Welcome = () => {
 
     return( 
         <div style={{ backgroundImage: `url(${ bgImg })` }} className="pageBg">
-            <h1>hello world</h1>
+            <h1>hello <i className="fa fa-globe"></i> world</h1>
+            <br />
+
+            <p>
+                Check out the various areas of the site, like my <Link to="/web">web development work</Link>, my <Link to="/design">visual portfolio</Link>, or my <Link to="/writing">writing portfolio</Link>. Scroll down to read my ramblings on my blog. 
+            </p>
+            <br /><br /><br />
+
+            <h2>Blog</h2>
             <br />
 
             <h3 style={{ display: "inline-block" }}>Getting Hooked on React Hooks</h3>&nbsp;
             <small>April 4 2020</small>
             <br /><br />
             <p>
-                For my inaugural blog post, I'd like to detail some of the trials, tribulations, and outright fun I had spinning up this portfolio site for myself from scratch. I was determined to write the least amount of bloat code for my components that I could andto spin up all of my CSS styling for complete control.
+                For my inaugural blog post, I'd like to detail some of the trials, tribulations, and outright fun I had spinning up this portfolio site for myself from scratch. I was determined to write the least amount of bloat code for my components that I could and to generate all of my CSS styling myself for complete control.
                 <br /><br />
                 I knew that functional React components are more lightweight than their class-based peers. Challenging myself to build a React app using purely functional components, I stumbled on several issues related to the Hooks API. I had to brush up on my knowledge of <code>useState()</code> and reacquiant myself with its common usage involving array destructuring. I had to transition my knowledge of class-based components to Hooks, and make sure that I was sending a copy of my state manually instead of relying on <code>setState()</code> to do some of this lifting.
                 <br /><br />

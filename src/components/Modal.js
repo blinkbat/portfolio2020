@@ -17,7 +17,7 @@ const Modal = props => {
             <div className="modal">
 
                 <img src={ props.img } alt={ props.title } />
-                <div>{ props.title }</div>
+                <span style={{ display: 'block', padding: '10px', paddingTop: '0' }}>{ props.title }</span>
 
             </div>
         </div>,

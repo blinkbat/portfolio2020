@@ -8,9 +8,10 @@ import Contact from '../Contact';
 
 describe( 'Contact component', () => {
 
+    const component = shallow( <Contact /> );
+
     it( 'should render the form', () => {
 
-        const component = shallow( <Contact /> );
         // console.log( component.debug() );
         const form = component.find( '[data-test="form"]' );
         expect( form.length ).toBe( 1 );
@@ -19,7 +20,6 @@ describe( 'Contact component', () => {
 
     it( 'should have an email input in form', () => {
 
-        const component = shallow( <Contact /> );
         // console.log( component.debug() );
         const form = component.find( '[data-test="form"]' );
         const email = form.find( 'input[type="submit"]' );

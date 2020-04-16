@@ -33,7 +33,7 @@ const Web = () => {
             link: 'http://montejoconsulting.com'
         },
         { 
-            img: require( '../images/ME-big.png' ),
+            img: require( '../images/MN-big.jpg' ),
             name: 'Messenger Node App', 
             descrip: 'A Node.js script to parse various Messenger inboxes of a given user, and write key data points out to CSV format for easy analysis.',
             link: ''
@@ -42,6 +42,12 @@ const Web = () => {
             img: require( '../images/PM-big.png' ),
             name: 'Project Maia', 
             descrip: 'Project Maia was a fun exercise in using data-driven algorithms to give advice and feedback about companies\' social media strategy.',
+            link: ''
+        },
+        { 
+            img: require( '../images/QG-big.jpg' ),
+            name: 'Yelp & Google API Script', 
+            descrip: 'A quick challenge to create a Node.js script which can query valuable information about businesses by category, using Yelp and Google Places to fetch locations, contacts, websites, and more.',
             link: ''
         },
         { 

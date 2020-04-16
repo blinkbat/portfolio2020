@@ -5,34 +5,13 @@ import React, { useState } from 'react';
 
 import Modal from './Modal';
 
+import designData from './designData';
 
 const Design = () => {
 
     // state handlers
     const [ modal, toggleModal ] = useState( false );
-    const [ modalInfo, setModal ] = useState({ title: '', img: '' })
-
-
-
-    // data
-    const tempImgs = [
-        'https://images.unsplash.com/photo-1558981852-426c6c22a060?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80',
-        'https://images.unsplash.com/photo-1585662634386-6c160dfda393?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
-        'https://images.unsplash.com/photo-1562887189-4b6edf71d847?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80',
-        'https://images.unsplash.com/photo-1585662634386-6c160dfda393?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
-        'https://images.unsplash.com/photo-1558981852-426c6c22a060?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80',
-        'https://images.unsplash.com/photo-1562887189-4b6edf71d847?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80',
-        'https://images.unsplash.com/photo-1562887189-4b6edf71d847?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80',
-        'https://images.unsplash.com/photo-1585662634386-6c160dfda393?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
-        'https://images.unsplash.com/photo-1558981852-426c6c22a060?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80',
-        'https://images.unsplash.com/photo-1585662634386-6c160dfda393?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
-        'https://images.unsplash.com/photo-1562887189-4b6edf71d847?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80',
-        'https://images.unsplash.com/photo-1585662634386-6c160dfda393?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
-        'https://images.unsplash.com/photo-1558981852-426c6c22a060?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80',
-        'https://images.unsplash.com/photo-1562887189-4b6edf71d847?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80',
-        'https://images.unsplash.com/photo-1562887189-4b6edf71d847?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80',
-        'https://images.unsplash.com/photo-1585662634386-6c160dfda393?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80'
-    ]
+    const [ modalInfo, setModal ] = useState({ title: '', img: '' });
 
 
 
@@ -58,6 +37,16 @@ const Design = () => {
 
     const bgImg = require( '../images/bg-design.jpg' );
 
+    // const shuffleArray = arr => {
+    //     for ( let i = arr.length - 1; i > 0; i--) {
+    //         const j = Math.floor( Math.random() * (i + 1) );
+    //         [ arr[i], arr[j] ] = [ arr[j], arr[i] ];
+    //     }
+    //     return arr;
+    // }
+    //
+    // imgs = shuffleArray( imgs );
+
 
 
     // render
@@ -75,12 +64,12 @@ const Design = () => {
 
             <section className="mosaic">
 
-                { tempImgs.map( ( img, index ) => {
+                { designData.map( ( item, index ) => {
 
                    return( 
 
-                        <div key={ index } onClick={ () => { showModal( 'testing', img ) } }>
-                            <img src={ img } alt={ `gallery${ index }` } />
+                        <div key={ index } onClick={ () => { showModal( item.title, item.img ) } }>
+                            <img src={ item.img } alt={ item.title } />
                         </div>
                         
                     );
