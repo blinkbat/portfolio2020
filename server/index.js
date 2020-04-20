@@ -22,32 +22,43 @@ if ( process.env.NODE_ENV === 'production' ) {
     app.use( express.static( '../client/build' ) );
 }
 
-app.post("api/contact", function( req, res ) {
+app.post( '/api/contact', function( req, res ) {
 
     console.log( req.body );
 
-    const msg = {
-        to: 'dbennettmiami@gmail.com',
-        from: 'david.bennett@ncf.edu',
-        subject: '-<[ New contact from dbennett.io ]>-',
-        text: `Sender: ${ req.body.email } \n\n Message: ${ req.body.message }`,
-        html: '<strong>Testing</strong>',
-    };
-    
-    sgMail.send( 
-        msg, 
-        (err, info) => { 
-            if( err ) {
-                console.error( err.response.body.errors ); 
-                return false;
-            } else {
-                console.log( info );
-            }
-        }
-    );
+    if( 
+        req.body.message 
+        && 
+        /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test( req.body.email )
+    ) {
 
+        const msg = {
+            to: 'dbennettmiami@gmail.com',
+            from: 'david.bennett@ncf.edu',
+            subject: '-<[ New contact from dbennett.io ]>-',
+            text: `Sender: ${ req.body.email } \n\nMessage: ${ req.body.message }`,
+        };
+        
+        sgMail.send( 
+            msg, 
+            (err, info) => { 
+                if( err ) {
+                    console.error( err.response.body.errors ); 
+                    return false;
+                } else {
+                    res.json( info );
+                }
+            }
+        );
+
+    }
 
 });
+
+// testing route
+// app.get( '/api', function( req, res ) {
+//     return res.json( 'hello' );
+// });
 
 // If no API routes are hit, send the React app
 app.use( function( req, res ) {

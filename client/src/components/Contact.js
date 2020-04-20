@@ -28,11 +28,12 @@ const Contact = () => {
             /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test( email )
             && message
         ) {
+
             // valid input
             axios
                 .post( 'api/contact', { email, message } )
-                .then( res => console.log( res.data ) )
-                .catch( err => console.error( err ) );
+                .then( res => res )
+                .catch( err => console.log( err ) );
 
         } else {
             // validation err
