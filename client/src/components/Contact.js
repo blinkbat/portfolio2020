@@ -50,7 +50,7 @@ const Contact = () => {
 
     }
 
-    renderFeedback() {
+    const renderFeedback = () => {
         if( feedback === 'success' ) {
             return <br /><span style={{ color: 'lightgreen' }}>Email sent!</span>;
         
