@@ -10,6 +10,8 @@ const Contact = () => {
     // state handlers
     const [ formInfo, setInfo ] = useState({ email: '', message: '' });
 
+    const [ feedback, setFeedback ] = useState({ feedback: '' })
+
 
 
     // helpers
@@ -35,13 +37,14 @@ const Contact = () => {
                 .then( res => {
                     
                     setInfo({ email: '', message: '' });
+                    setFeedback({ feedback: 'success' });
                     return res;
                 })
                 .catch( err => console.log( err ) );
 
         } else {
             // validation err
-            
+            setFeedback({ feedback: 'invalid' });
 
         }
 
@@ -82,6 +85,13 @@ const Contact = () => {
                     value="send it" 
                     onClick={ handleFormSubmit }
                 />
+                <br />
+
+                { feedback === 'success' ? 
+                    <span style={{ color: 'lightgreen' }}>Email sent!</span>
+                :
+                    <span style={{ color: 'red' }}>One or more fields invalid.</span>
+                }
 
             </p>
             <br /><br />
