@@ -16,6 +16,8 @@ const Welcome = () => {
             <br />
 
             <p>
+                I'm David Bennett, a full-stack web developer from Miami, FL. Thanks for stopping by my corner of the WWW.
+                <br /><br />
                 Check out the various areas of the site, like my <Link to="/web">web development work</Link>, my <Link to="/design">visual portfolio</Link>, or my <Link to="/writing">writing portfolio</Link>. Scroll down to read my ramblings on my blog. 
             </p>
             <br /><br /><br />

@@ -28,7 +28,6 @@ const Writing = () => {
                             <div 
                                 className="articleImg"
                                 style={{ backgroundImage: `url(${ article.img })` }} 
-                                alt={ article.name } 
                             />
 
                             <br />

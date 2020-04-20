@@ -2,7 +2,7 @@
 
 
 import React, { useState } from 'react';
-
+import axios from 'axios';
 
 
 const Contact = () => {
@@ -28,9 +28,15 @@ const Contact = () => {
             /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test( email )
             && message
         ) {
-            alert( 'valid stuff.' );
+            // valid input
+            axios
+                .post( 'api/contact', { email, message } )
+                .then( res => console.log( res.data ) )
+                .catch( err => console.error( err ) );
+
         } else {
-            alert( 'N0T cool man!' );
+            // validation err
+
         }
 
     }
