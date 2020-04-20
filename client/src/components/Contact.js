@@ -52,10 +52,10 @@ const Contact = () => {
 
     const renderFeedback = () => {
         if( feedback === 'success' ) {
-            return <br /><span style={{ color: 'lightgreen' }}>Email sent!</span>;
+            return <span style={{ color: 'lightgreen' }}>Email sent!</span>
         
         } else if( feedback === 'invalid' ) {
-            return <br /><span style={{ color: 'red' }}>One or more fields invalid.</span>;
+            return <span style={{ color: 'red' }}>One or more fields invalid.</span>
 
         }
     }
@@ -94,7 +94,7 @@ const Contact = () => {
                     value="send it" 
                     onClick={ handleFormSubmit }
                 />
-                <br />
+                <br /><br />
 
                 { renderFeedback() }
 
