@@ -32,11 +32,16 @@ const Contact = () => {
             // valid input
             axios
                 .post( 'api/contact', { email, message } )
-                .then( res => res )
+                .then( res => {
+                    
+                    setInfo({ email: '', message: '' });
+                    return res;
+                })
                 .catch( err => console.log( err ) );
 
         } else {
             // validation err
+            
 
         }
 
