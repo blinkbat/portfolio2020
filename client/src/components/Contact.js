@@ -10,7 +10,7 @@ const Contact = () => {
     // state handlers
     const [ formInfo, setInfo ] = useState({ email: '', message: '' });
 
-    const [ feedback, setFeedback ] = useState({ feedback: '' })
+    const [ feedback, setFeedback ] = useState( '' )
 
 
 
@@ -37,14 +37,14 @@ const Contact = () => {
                 .then( res => {
                     
                     setInfo({ email: '', message: '' });
-                    setFeedback({ feedback: 'success' });
+                    setFeedback( 'success' );
                     return res;
                 })
                 .catch( err => console.log( err ) );
 
         } else {
             // validation err
-            setFeedback({ feedback: 'invalid' });
+            setFeedback( 'invalid' );
 
         }
 
