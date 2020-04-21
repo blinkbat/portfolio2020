@@ -70,8 +70,8 @@ const writingData = [
     },
     {
         img: require( '../images/writing/relative-studios.jpg' ),
-        name: `PureSalem Guitars Opens South Miami-Dade Showroom With a Bang`,
-        desc: `Rick Sell, the mastermind behind the one-of-a-kind custom-guitar purveyor PureSalem, hasn't always been an artisan. He spent 21 years with the Miami-Dade Police Department and then walked away to live his dream of creating custom axes for some of rock's most notable innovators.`,
+        name: `When It Comes to Miami Design, It's All Relative`,
+        desc: `Walking into Amy Falcon's inspired design store, Relative, you'd be forgiven for doing a double-take. The airy, warmly inviting space sits in the heart of downtown Miami.`,
         link: 'https://www.miaminewtimes.com/arts/relative-studios-hosts-design-social-with-emmett-moore-deon-rubi-other-miami-designers-9735527'
     },
     {
