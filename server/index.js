@@ -35,7 +35,7 @@ app.post( '/api/contact', function( req, res ) {
         const msg = {
             to: 'dbennettmiami@gmail.com',
             from: 'david.bennett@ncf.edu',
-            subject: '-<[ New contact from dbennett.io ]>-',
+            subject: `-<[ New contact from dbennett.io (${ req.body.email }) ]>-`,
             text: `Sender: ${ req.body.email } \n\nMessage: ${ req.body.message }`,
         };
         

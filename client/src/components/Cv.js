@@ -121,7 +121,7 @@ const Cv = () => {
                 <div className="col-2-3">
                     <span className="pinkTxt">Gallerist, Graphic Designer, and Web Developer, Etra Fine Art, Wynwood, Miami, FL</span>
                     <br /><br />   
-                    &middot; Managed and curated a fine art gallery, designed ads, brochures, and other materials, maintained gallery web presence.
+                    Managed and curated a fine art gallery, designed ads, brochures, and other materials, maintained gallery web presence.
                 </div>
             </div>
             <br /><br/>
@@ -136,7 +136,7 @@ const Cv = () => {
                 <div className="col-2-3">
                     <span className="pinkTxt">Wyncode Academy</span>
                     <br /><br />   
-                    &middot; Full-Stack Web Development Intensive, Part-Time Cohort 1, Miami, FL
+                    Full-Stack Web Development Intensive, Part-Time Cohort 1, Miami, FL
                 </div>
             </div>
 
@@ -147,7 +147,7 @@ const Cv = () => {
                 <div className="col-2-3">
                     <span className="pinkTxt">New College of Florida</span>
                     <br /><br />   
-                    &middot; BA, Area of Concentration in Art (Honors College of Florida), Sarasota, FL
+                    BA, Area of Concentration in Art (Honors College of Florida), Sarasota, FL
                 </div>
             </div>
             <br /><br/>

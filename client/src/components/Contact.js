@@ -30,7 +30,6 @@ const Contact = () => {
             /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test( email )
             && message
         ) {
-
             // valid input
             axios
                 .post( 'api/contact', { email, message } )
@@ -45,24 +44,28 @@ const Contact = () => {
         } else {
             // validation err
             setFeedback( 'invalid' );
-
         }
 
     }
 
     const renderFeedback = () => {
+
         if( feedback === 'success' ) {
-            return <span style={{ color: 'lightgreen' }}>Email sent!</span>
+
+            return <code style={{ color: 'lightgreen' }}>email sent!</code>
         
         } else if( feedback === 'invalid' ) {
-            return <span style={{ color: 'red' }}>One or more fields invalid.</span>
+
+            return <code style={{ color: 'red' }}>one or more fields invalid.</code>
 
         }
+
     }
 
 
     // render
     return( 
+
         <div style={{ backgroundImage: `url(${ bgImg })` }} className="pageBg">
             <h1>contact</h1>
             <br />
@@ -118,6 +121,7 @@ const Contact = () => {
             </p>
 
         </div>
+
     );
 
 }
