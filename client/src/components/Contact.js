@@ -31,6 +31,8 @@ const Contact = () => {
             && message
         ) {
             // valid input
+            setFeedback( 'sending' );
+
             axios
                 .post( 'api/contact', { email, message } )
                 .then( res => {
@@ -52,7 +54,11 @@ const Contact = () => {
 
         if( feedback === 'success' ) {
 
-            return <code style={{ color: 'lightgreen' }}>email sent!</code>
+            return <code style={{ color: 'lightgreen' }}>message sent!</code>
+
+        } else if( feedback === 'sending' ) {
+
+            return <code style={{ color: 'lightyellow' }}>sending...</code>
         
         } else if( feedback === 'invalid' ) {
 
@@ -72,7 +78,7 @@ const Contact = () => {
             <p>I love hearing from the internet. Reach out to me below.</p>
             <br /><br />
 
-            <p data-test="form">
+            <p data-test="form" className="form">
 
                 <input 
                     name="email"
@@ -86,7 +92,7 @@ const Contact = () => {
                 <textarea 
                     name="message"
                     placeholder="your message (required)" 
-                    rows="8" style={{ width: "600px" }} 
+                    rows="8" 
                     value={ formInfo.message }
                     onChange={ handleInput }
                 />
@@ -104,7 +110,7 @@ const Contact = () => {
             </p>
             <br /><br />
 
-            <p>
+            <p className="social">
                 <a href="https://github.com/blinkbat/" target="_blank" rel="noopener noreferrer">
                     <i className="fa fa-github"></i> github
                 </a>

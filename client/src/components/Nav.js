@@ -1,7 +1,7 @@
 
 
 
-import React from 'react';
+import React, { useState } from 'react';
 
 import { Link } from 'react-router-dom';
 
@@ -9,13 +9,26 @@ import { Link } from 'react-router-dom';
 
 const Nav = () => {
 
+    const [ mobileMenu, toggleMobile ] = useState( false );
+
     return( 
         
         <nav className="nav">
 
-            <Link to="/"><h2>david a. bennett</h2></Link>
+            <Link 
+                to="/" 
+                onClick={ () => { toggleMobile( false ) } }
+            ><h2>david a. bennett</h2></Link>
 
-            <ul>
+            <i 
+                className="fa fa-bars hamburger"
+                onClick={ () => { toggleMobile( !mobileMenu ) } }
+            ></i>
+
+            <ul 
+                className={ mobileMenu ? "" : "mobileHide" } 
+                onClick={ () => { toggleMobile( !mobileMenu ) } }
+            >
                 <Link to="/"><li>blog</li></Link>
                 <Link to="/web"><li>web</li></Link>
                 <Link to="/design"><li>design</li></Link>

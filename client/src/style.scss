@@ -100,6 +100,7 @@ h4 { font-size: 1.6rem; }
 }
 
 .nav {
+    transition: all ease-in .2s;
     text-align: center;
     height: 100vh;
     position: fixed;
@@ -108,6 +109,7 @@ h4 { font-size: 1.6rem; }
     color: white;
     text-shadow: 0 2px 6px rgba(0,0,0, .5);
     box-shadow: 0 2px 6px rgba(0,0,0, .5);
+    padding: 50px 3%;
 
     li { 
         font-size: 1.5rem;
@@ -123,6 +125,8 @@ h4 { font-size: 1.6rem; }
 
     a { color: #fff; }
 }
+
+.hamburger { display: none; }
 
 .container {
     margin-left: 20%;
@@ -141,8 +145,6 @@ h4 { font-size: 1.6rem; }
     display: inline-block; 
     vertical-align: top; 
 }
-
-.nav { padding: 50px 3%; }
 
 .content { min-height: 100vh;}
 
@@ -320,4 +322,80 @@ h4 { font-size: 1.6rem; }
     background-size: cover; 
     border-radius: 5px 5px 0 0;
     background-position: center; 
+}
+
+
+
+/************************** CONTACT */
+
+textarea { width: 600px; }
+
+
+
+/************************** 1200 BREAKPT (MINOR) */
+
+@media only screen and (max-width: 1200px) {
+
+    .nav h2 { font-size: 1.8rem; line-height: 1.9rem; }
+
+}
+
+
+
+/************************** 768 BREAKPT (MAJOR) */
+
+@media only screen and (max-width: 768px) {
+
+    .nav { 
+        height: auto; 
+        min-height: 120px; 
+        width: 100%; 
+        padding: 5%; 
+        z-index: 2; 
+        padding-bottom: 0;
+    }
+
+    .nav h2 { display: inline-block; margin: auto; font-size: 2.2rem; }
+
+    .nav li { 
+        font-size: 1.2rem; 
+        line-height: 1.4rem; 
+    }
+
+    .nav ul { margin-bottom: 30px; }
+
+    .hamburger { display: block; margin: 20px; font-size: 1.5rem;  }
+
+    .mobileHide { 
+        height: 0; 
+        overflow: hidden; 
+        margin: 0 !important;
+    }
+
+    .container { width: 100%; margin: 0; }
+
+    .pageBg { padding: 4%; padding-top: 170px; }
+
+    h1 { 
+        text-align: center; 
+        display: block; 
+        font-size: 3rem; 
+        margin-bottom: 0; 
+    }
+
+    p, .webBox, .articleBox, .col-1-3, .col-2-3 { 
+        font-size: 1rem; 
+        line-height: 1.5rem; 
+    }
+
+    .mosaic img { filter: brightness(100%); }
+
+    .col-1-3, .col-2-3 { width: 100%; }
+
+    .flexCtr { display: block; }
+
+    .form, .form * { width: 100%; }
+
+    .social a { display: inline-block; }
+
 }

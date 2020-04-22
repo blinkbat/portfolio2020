@@ -19,7 +19,7 @@ const Design = () => {
     const showModal = ( title, img ) => {
 
         // do nothing on mobile, corresponds to css breakpt
-        if( window.innerWidth > 1200 ) {
+        if( window.innerWidth >= 768 ) {
 
             setModal({ title, img });
             toggleModal( !modal );
