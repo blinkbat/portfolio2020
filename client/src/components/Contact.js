@@ -9,10 +9,7 @@ const Contact = () => {
 
     // state handlers
     const [ formInfo, setInfo ] = useState({ email: '', name: '', message: '' });
-
     const [ feedback, setFeedback ] = useState( '' )
-
-
 
     // helpers
 
@@ -21,8 +18,6 @@ const Contact = () => {
         const { name, value } = e.target;
         setInfo({ ...formInfo, [name]: value });
     }
-
-    const bgImg = require( '../images/bg-contact.jpg' );
 
     const handleFormSubmit = () => {
 
@@ -68,6 +63,9 @@ const Contact = () => {
 
     }
 
+
+    
+    const bgImg = require( '../images/bg-contact.jpg' );
 
     // render
     return( 

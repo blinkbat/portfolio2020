@@ -135,7 +135,7 @@ const imgs = [
         img: require( '../images/design/to-yr-halls.jpg' ) 
     },
     { 
-        title: `"Transference", digital concept art, 2016`, 
+        title: `"Transference", acrylic on panel, 2012`, 
         img: require( '../images/design/transference.jpg' ) 
     },
     { 

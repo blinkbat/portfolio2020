@@ -2,9 +2,6 @@
 require( 'dotenv' ).config()
 
 const sgMail = require( '@sendgrid/mail' );
-
-// strip newlines. why? I want to die
-const sgKey = process.env.SENDGRID_API_KEY.replace( /(\r\n|\n|\r)/gm,"" );
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 const express = require( 'express' );
@@ -12,6 +9,9 @@ const path = require( 'path' );
 
 const app = express();
 const PORT = process.env.PORT || 3001;
+
+const compression = require( 'compression' );
+app.use( compression() );
 
 // Define middleware here
 app.use( express.urlencoded({ extended: true }) );

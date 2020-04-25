@@ -13,8 +13,6 @@ const Design = () => {
     const [ modal, toggleModal ] = useState( false );
     const [ modalInfo, setModal ] = useState({ title: '', img: '' });
 
-
-
     // helpers
     const showModal = ( title, img ) => {
 
@@ -35,8 +33,6 @@ const Design = () => {
 
     }
 
-    const bgImg = require( '../images/bg-design.jpg' );
-
     // const shuffleArray = arr => {
     //     for ( let i = arr.length - 1; i > 0; i--) {
     //         const j = Math.floor( Math.random() * (i + 1) );
@@ -49,7 +45,8 @@ const Design = () => {
 
 
 
-    // render
+    const bgImg = require( '../images/bg-design.jpg' );
+    
     return( 
 
         // IDEA: maybe a random gradient color top right for pageBg

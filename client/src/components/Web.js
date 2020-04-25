@@ -58,6 +58,8 @@ const Web = () => {
         }
     ];
 
+
+    
     const bgImg = require( '../images/bg-web.jpg' );
 
     return( 
@@ -81,12 +83,8 @@ const Web = () => {
 
                 { webData.map( ( site, index ) => {
 
-                     // TODO: EXTRACT TO OWN WEB BOX COMPONENT? maybe a lightbox?
-                     // TODO: nice fade effect on right side of scrollbox?
                      // ADD: CSTA
-
                     return(
-
                         <li className="webBox" key={ index }>
                             
                             <h3>{ site.name }</h3>
@@ -95,11 +93,9 @@ const Web = () => {
                                 className="webBoxImg"
                                 style={{ backgroundImage: `url( ${ site.img } )` }} 
                             ></div>
-
                             <br />
 
                             { site.descrip }
-
                             <br />
 
                             { site.link ?
@@ -109,7 +105,6 @@ const Web = () => {
                             : '' }
 
                         </li>
-
                     );
 
                 }) }

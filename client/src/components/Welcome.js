@@ -25,6 +25,13 @@ const Welcome = () => {
             <h2>Blog</h2>
             <br />
 
+            <h3 style={{ display: "inline-block" }}>You Don't Need JavaScript For That</h3>&nbsp;
+            <small>April 24 2020</small>
+            <br /><br />
+            <p>
+                why I chose to make a React app for a website that shouldn't be a React app.
+            </p>
+
             <h3 style={{ display: "inline-block" }}>Getting Hooked on React Hooks</h3>&nbsp;
             <small>April 4 2020</small>
             <br /><br />
@@ -37,8 +44,6 @@ const Welcome = () => {
                 <br /><br />
                 Another engaging moment came when I tried to implement a modal component for my Design gallery. Refactoring my existing modal code to rely on Hooks, I implemented a solution using a boolean modal state and conditional rendering. Coupling this with a <code>modalInfo</code> object passed via props, I was able to get the modal to display the clicked image -- but it was rather ugly. I then had to turn on my CSS goggles and attack the situation, finding the best way to display the modal's shade overlay, the centered and responsively-sized modal itself, and the corresponding caption. This was a hefty job, and it was very satisfying to watch it all come together.
             </p>
-
-
 
         </div>
     );
