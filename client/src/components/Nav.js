@@ -18,12 +18,15 @@ const Nav = () => {
             <Link 
                 to="/" 
                 onClick={ () => { toggleMobile( false ) } }
-            ><h2>david a. bennett</h2></Link>
-
+            >
+                <h2>david a. bennett</h2>
+            </Link>
+            
             <i 
                 className="fa fa-bars hamburger"
                 onClick={ () => { toggleMobile( !mobileMenu ) } }
             ></i>
+
 
             <ul 
                 className={ mobileMenu ? "" : "mobileHide" } 

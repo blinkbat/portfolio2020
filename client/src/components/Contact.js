@@ -8,13 +8,15 @@ import axios from 'axios';
 const Contact = () => {
 
     // state handlers
-    const [ formInfo, setInfo ] = useState({ email: '', message: '' });
+    const [ formInfo, setInfo ] = useState({ email: '', name: '', message: '' });
 
     const [ feedback, setFeedback ] = useState( '' )
 
 
 
     // helpers
+
+    // note that the target iterator is generic -- don't change
     const handleInput = e => {
         const { name, value } = e.target;
         setInfo({ ...formInfo, [name]: value });
@@ -24,20 +26,21 @@ const Contact = () => {
 
     const handleFormSubmit = () => {
 
-        const { email, message } = formInfo;
+        const { email, name, message } = formInfo;
 
         if(
             /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test( email )
             && message
+            && name
         ) {
             // valid input
             setFeedback( 'sending' );
 
             axios
-                .post( 'api/contact', { email, message } )
+                .post( 'api/contact', formInfo )
                 .then( res => {
                     
-                    setInfo({ email: '', message: '' });
+                    setInfo({ email: '', name: '', message: '' });
                     setFeedback( 'success' );
                     return res;
                 })
@@ -53,15 +56,12 @@ const Contact = () => {
     const renderFeedback = () => {
 
         if( feedback === 'success' ) {
-
             return <code style={{ color: 'lightgreen' }}>message sent!</code>
 
         } else if( feedback === 'sending' ) {
+            return <code style={{ color: 'lightgray' }}>sending...</code>
 
-            return <code style={{ color: 'lightyellow' }}>sending...</code>
-        
         } else if( feedback === 'invalid' ) {
-
             return <code style={{ color: 'red' }}>one or more fields invalid.</code>
 
         }
@@ -85,6 +85,16 @@ const Contact = () => {
                     type="text" 
                     placeholder="your email (required)" 
                     value={ formInfo.email } 
+                    onChange={ handleInput }
+                    style={{ marginRight: '20px' }}
+                />
+                <br className="desktopHide" /><br className="desktopHide" />
+
+                <input
+                    name="name"
+                    type="text"
+                    placeholder="your name (required)"
+                    value={ formInfo.name }
                     onChange={ handleInput }
                 />
                 <br /><br />

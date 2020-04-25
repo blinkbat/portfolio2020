@@ -29,14 +29,16 @@ app.post( '/api/contact', function( req, res ) {
     if( 
         req.body.message 
         && 
+        req.body.name
+        &&
         /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test( req.body.email )
     ) {
 
         const msg = {
             to: 'dbennettmiami@gmail.com',
             from: 'david.bennett@ncf.edu',
-            subject: `-<[ New contact from dbennett.io (${ req.body.email }) ]>-`,
-            text: `Sender: ${ req.body.email } \n\nMessage: ${ req.body.message }`,
+            subject: `-<[ New contact from dbennett.io ]>-`,
+            text: `Sender: ${ req.body.name } (${ req.body.email }) \n\nMessage: ${ req.body.message }`
         };
         
         sgMail.send( 
@@ -54,11 +56,6 @@ app.post( '/api/contact', function( req, res ) {
     }
 
 });
-
-// testing route
-// app.get( '/api', function( req, res ) {
-//     return res.json( 'hello' );
-// });
 
 // If no API routes are hit, send the React app
 app.use( function( req, res ) {
