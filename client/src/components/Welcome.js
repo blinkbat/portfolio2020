@@ -25,12 +25,13 @@ const Welcome = () => {
             <h2>Blog</h2>
             <br />
 
-            <h3 style={{ display: "inline-block" }}>You Don't Need JavaScript For That</h3>&nbsp;
+            {/* <h3 style={{ display: "inline-block" }}>You Don't Need JavaScript For That</h3>&nbsp;
             <small>April 24 2020</small>
             <br /><br />
             <p>
                 why I chose to make a React app for a website that shouldn't be a React app.
             </p>
+            <br /><br /> */}
 
             <h3 style={{ display: "inline-block" }}>Getting Hooked on React Hooks</h3>&nbsp;
             <small>April 4 2020</small>
