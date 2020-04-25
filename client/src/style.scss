@@ -322,6 +322,7 @@ input, textarea, input[type="submit"] {
 input { width: 290px; }
 
 input[type="submit"] { 
+    width: auto;
     background-color: $pink; 
     color: #fff;
     font-size: 18px; 
