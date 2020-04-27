@@ -68,11 +68,9 @@ const Web = () => {
             <br />
             <p>
                 My passion for the 'net (we really used to call it that) helps me strive to create beautiful designs, intuitive UIs, great user experiences, delightfully clean code, and lightning-fast response times.
-
                 <br /><br />
 
                 The site you're oglin' right now was created with next-generation technologies like React.js, Node.js, SCSS, semantic HTML5, and more.
-
                 <br /><br />
 
                 Below, check out some of my web dev work.&nbsp;

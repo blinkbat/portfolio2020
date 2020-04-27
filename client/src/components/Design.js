@@ -73,10 +73,14 @@ const Design = () => {
                     return( 
 
                         <div key={ index } onClick={ () => { showModal( item.title, item.img ) } }>
+
                             {/* lazyload causes flickering. try to resolve. 
                             <LazyLoad height={200} offset={100}> */}
+
                                 <img src={ item.img } alt={ item.title } />
+                                
                             {/* </LazyLoad> */}
+
                         </div>
                         
                     );

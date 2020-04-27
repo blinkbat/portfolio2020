@@ -356,6 +356,8 @@ input[type="submit"] {
 
 @media only screen and (max-width: 768px) {
 
+    body { overflow-x: hidden; }
+
     .desktopOnly { display: none; }
 
     .nav { 
@@ -376,7 +378,7 @@ input[type="submit"] {
         }
 
         ul { 
-            margin: 10px; transition: all ease-in .1s; 
+            margin: 10px; transition: all ease-in .05s; 
         }
 
         ul.mobileHide {
@@ -434,7 +436,6 @@ input[type="submit"] {
 
         a { position: static; }
     }
-
 
     .webBoxImg { height: 170px; }
 
