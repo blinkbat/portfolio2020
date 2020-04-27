@@ -1,7 +1,7 @@
 
 
 
-const imgs = [
+let imgs = [
     { 
         title: `"Basel Dog", ink on notebook paper, 2013`, 
         img: require( '../images/design/basel-dog.jpg' ) 
@@ -40,11 +40,11 @@ const imgs = [
     },
     { 
         title: `"Interloper", ink & digital, 2016`, 
-        img: require( '../images/design/interloper-surprised.png' ) 
+        img: require( '../images/design/interloper-surprised.jpg' ) 
     },
     { 
         title: `"Night Island", isometric pixel art, 2017`, 
-        img: require( '../images/design/iso-night-island.png' ) 
+        img: require( '../images/design/iso-night-island.jpg' ) 
     },
     { 
         title: `"Night Cabin", isometric pixel art, 2017`, 
@@ -88,7 +88,7 @@ const imgs = [
     },
     { 
         title: `"Night Forest", pixel tileset, 2017`, 
-        img: require( '../images/design/ortho-night.png' ) 
+        img: require( '../images/design/ortho-night.jpg' ) 
     },
     { 
         title: `"Parallax", acrylic on panel, 2012`, 
@@ -128,7 +128,7 @@ const imgs = [
     },
     { 
         title: `"Space Mountain", digital concept art, 2015`, 
-        img: require( '../images/design/space-mountain.gif' ) 
+        img: require( '../images/design/space-mountain.jpg' ) 
     },
     { 
         title: `"To Yr Halls", acrylic on panel, 2012`, 

@@ -9,25 +9,25 @@ const Web = () => {
 
     const webData = [
         { 
-            img: require( '../images/ME-big.png' ),
+            img: require( '../images/ME-big.jpg' ),
             name: 'Manhattan Eye', 
             descrip: 'A comprehensive site for NYC-based opthamologist Yuna Rapoport, with information on her practice and medical knowledge for the public. Built with WordPress and Elementor.',
             link: 'https://manhattaneyenyc.com'
         },
         { 
-            img: require( '../images/HS-big.png' ),
+            img: require( '../images/HS-big.jpg' ),
             name: 'Haddad & Sherwin', 
             descrip: 'Haddad & Sherwin is a legal team based in San Francisco that\'s serious about social justice, police brutality, LGBTQ rights, and more. Built with WordPress.',
             link: 'https://haddadandsherwin.com'
         },
         { 
-            img: require( '../images/PR-big.png' ),
+            img: require( '../images/PR-big.jpg' ),
             name: 'Pure Relief Quiz', 
             descrip: 'A jQuery-built quiz to help customers pick out the best CBD products from natural retailer Pure Relief.',
             link: 'https://purerelief.com/myreliefcbdquiz'
         },
         { 
-            img: require( '../images/MC-big.png' ),
+            img: require( '../images/MC-big.jpg' ),
             name: 'Montejo Consulting', 
             descrip: 'Karin Montejo has had a storied history as a police chief, and now uses her expertise to guide policewomen towards success in their careers. Built with WordPress.',
             link: 'http://montejoconsulting.com'
@@ -39,7 +39,7 @@ const Web = () => {
             link: ''
         },
         { 
-            img: require( '../images/PM-big.png' ),
+            img: require( '../images/PM-big.jpg' ),
             name: 'Project Maia', 
             descrip: 'Project Maia was a fun exercise in using data-driven algorithms to give advice and feedback about companies\' social media strategy.',
             link: ''
@@ -51,7 +51,7 @@ const Web = () => {
             link: ''
         },
         { 
-            img: require( '../images/GC-big.png' ),
+            img: require( '../images/GC-big.jpg' ),
             name: 'General Real Estate Corp.', 
             descrip: 'A site showcasing the diverse developments of one of the biggest real estate investment companies in South Florida. Built with WordPress.',
             link: 'http://greccorp.com'

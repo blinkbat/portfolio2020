@@ -1,17 +1,27 @@
 
 
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+// import LazyLoad from 'react-lazyload';
 
 import Modal from './Modal';
 
-import designData from './designData';
+import imgs from './designData';
 
 const Design = () => {
 
     // state handlers
     const [ modal, toggleModal ] = useState( false );
     const [ modalInfo, setModal ] = useState({ title: '', img: '' });
+
+    const [ designData, setDesignData ] = useState( [] );
+
+
+
+    // useEffect on mount to randomize images
+    useEffect( () => setDesignData( shuffleArray( imgs ) ), [] );
+
+
 
     // helpers
     const showModal = ( title, img ) => {
@@ -33,15 +43,13 @@ const Design = () => {
 
     }
 
-    // const shuffleArray = arr => {
-    //     for ( let i = arr.length - 1; i > 0; i--) {
-    //         const j = Math.floor( Math.random() * (i + 1) );
-    //         [ arr[i], arr[j] ] = [ arr[j], arr[i] ];
-    //     }
-    //     return arr;
-    // }
-    //
-    // imgs = shuffleArray( imgs );
+    const shuffleArray = arr => {
+        for ( let i = arr.length - 1; i > 0; i--) {
+            const j = Math.floor( Math.random() * (i + 1) );
+            [ arr[i], arr[j] ] = [ arr[j], arr[i] ];
+        }
+        return arr;
+    }
 
 
 
@@ -62,15 +70,16 @@ const Design = () => {
             <section className="mosaic">
 
                 { designData.map( ( item, index ) => {
-
-                   return( 
+                    return( 
 
                         <div key={ index } onClick={ () => { showModal( item.title, item.img ) } }>
-                            <img src={ item.img } alt={ item.title } />
+                            {/* lazyload causes flickering. try to resolve. 
+                            <LazyLoad height={200} offset={100}> */}
+                                <img src={ item.img } alt={ item.title } />
+                            {/* </LazyLoad> */}
                         </div>
                         
                     );
-
                 }) }
 
             </section>

@@ -86,6 +86,42 @@ const writingData = [
         desc: `If you're a Miamian, chances are you've embraced climate change as fact (or live in an ideological bubble). The evidence is all around, and it forecasts rising sea levels, warming temperatures, changing wildlife patterns, and increasingly volatile storm seasons.`,
         link: 'https://www.miaminewtimes.com/arts/stephanie-wakefield-climate-change-lecture-at-institute-of-contemporary-art-miami-july-15-9486685'
     },
+    {
+        img: require( '../images/writing/lorie-mertes.jpg' ),
+        name: `Locust Projects Names Lorie Mertes, Formerly of MAM, Executive Director`,
+        desc: `Influential arts nonprofit Locust Projects has appointed a new executive director. On the cusp of a momentous anniversary — the space will turn 20 in 2018 — Lorie Mertes will replace Chana Sheldon, who was at the helm for eight years.`,
+        link: 'https://www.miaminewtimes.com/arts/locust-projects-announces-lorie-mertes-as-new-executive-director-9315460'
+    },
+    {
+        img: require( '../images/writing/fire-festival.jpg' ),
+        name: `Tigertail's Fire Festival Brings Contemporary Creatives to Miami`,
+        desc: `Festivals in Miami conform to a bit of a mold: They're typically bass-heavy, unflinchingly hedonistic, and rhyme with "shmultra." Mary Luft of Tigertail Productions has worked tirelessly since the '80s to break that mold.`,
+        link: 'https://www.miaminewtimes.com/arts/tigertail-launches-fire-festival-in-miami-with-avant-garde-artists-9237052'
+    },
+    {
+        img: require( '../images/writing/plensa.jpg' ),
+        name: `'Crown Fountain' Artist Jaume Plensa Brings Giant Sculpture to Museum Park`,
+        desc: `Visitors to PAMM's Museum Park are in for a surprise following the recent acquisition of a monumental piece by renowned sculptor Jaume Plensa. Titled Looking Into My Dreams, Awilda, the 39-foot-tall sculpture depicts the elongated face of the titular Awilda, her eyes closed in meditation, perched close to Biscayne Bay.`,
+        link: 'https://www.miaminewtimes.com/arts/crown-fountain-artist-jaume-plensa-brings-new-awilda-sculpture-to-museum-park-9207350'
+    },
+    {
+        img: require( '../images/writing/bonnie-clearwater.jpg' ),
+        name: `Why Is This Art? NSU Art Museum's Bonnie Clearwater Explains`,
+        desc: `This spring will mark a very important anniversary for art historians, especially those interested in Marcel Duchamp. Around this time 100 years ago, the French artist, widely regarded as one of the founders of conceptual art, infamously took a prefabricated porcelain urinal, signed it "R. Mutt 1917," and submitted it for exhibition to the Society of Independent Artists. The title he chose for the work was Fountain.`,
+        link: 'https://www.miaminewtimes.com/arts/bonnie-clearwater-nsu-art-museum-director-on-marcel-duchamp-and-some-aesthetic-decisions-9334260'
+    },
+    {
+        img: require( '../images/writing/inc2017.jpg' ),
+        name: `Inside International Noise Conference's Alien, Intimate, Ear-Busting Scene`,
+        desc: `Every year, the International Noise Conference descends upon Churchill's Pub in Little Haiti for a week of alien frequencies, outré performance art, and late-night debauchery. After more than a decade of bizarre and frequently brilliant shows, the event has endeared itself to attendees and performers from Florida and beyond.`,
+        link: 'https://www.miaminewtimes.com/music/inside-international-noise-conferences-alien-intimate-ear-busting-scene-9104394'
+    },
+    {
+        img: require( '../images/writing/shepard-fairey.jpg' ),
+        name: `Shepard Fairey on Gentrification in Wynwood: "Blaming Art Is the Wrong Tactic"`,
+        desc: `Shepard Fairey, one of the best-known street artists to leave a tag on a wall since the invention of the craft, and creator of the instantly recognizable “Hope” campaign poster for Barack Obama, needs no introduction. Just look at the monumental murals he’s crafted in major cities across the globe, including a few in Miami.`,
+        link: 'https://www.miaminewtimes.com/arts/shepard-fairey-on-gentrification-in-wynwood-blaming-art-is-the-wrong-tactic-9145686'
+    },
     
 ];
 

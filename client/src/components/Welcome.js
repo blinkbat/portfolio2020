@@ -24,6 +24,14 @@ const Welcome = () => {
 
             <h2>Blog</h2>
             <br />
+            
+            {/* <h3 style={{ display: "inline-block" }}>States, Effects, &amp; Rendering, Oh My!</h3>&nbsp;
+            <small>April 27 2020</small>
+            <br /><br />
+            <p>
+                falling into traps with useState, useEffect, and pre-mount versus post-mount data versus state dependency.
+            </p>
+            <br /><br /> */}
 
             {/* <h3 style={{ display: "inline-block" }}>You Don't Need JavaScript For That</h3>&nbsp;
             <small>April 24 2020</small>
