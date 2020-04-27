@@ -356,6 +356,8 @@ input[type="submit"] {
 
 @media only screen and (max-width: 768px) {
 
+    .desktopOnly { display: none; }
+
     .nav { 
         height: auto; 
         width: 100%; 

@@ -76,7 +76,12 @@ const Web = () => {
                 <br /><br />
 
                 Below, check out some of my web dev work.&nbsp;
-                <span style={{ fontStyle: 'italic', opacity: '.5' }}>Scroll thattaway! &rarr;</span>
+                <span 
+                    className="desktopOnly"
+                    style={{ fontStyle: 'italic', opacity: '.5' }}
+                >
+                    Scroll thattaway! &rarr;
+                </span>
             </p>
 
             <ul className="rightScroll">

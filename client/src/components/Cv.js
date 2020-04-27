@@ -161,8 +161,10 @@ const Cv = () => {
                 &middot; PHP7 with Laravel<br />
                 &middot; MySQL with Sequelize<br />
                 &middot; MongoDB with Mongoose<br />
+                &middot; IndexedDB with Dexie<br />
                 &middot; HTML5 &amp; CSS3 with Sass<br />
                 &middot; Ruby on Rails 5<br />
+                &middot; Progressive Web Applications (PWAs)<br />
                 &middot; Adobe Suite (Photoshop, Illustrator, InDesign, etc.)<br />
                 &middot; Networking, DNS, etc.<br />
                 &middot; SEO Optimization<br />
