@@ -57,7 +57,7 @@ const Contact = () => {
             return <code style={{ color: 'lightgray' }}>sending...</code>
 
         } else if( feedback === 'invalid' ) {
-            return <code style={{ color: 'red' }}>one or more fields invalid.</code>
+            return <code style={{ color: '#ff957a' }}>one or more fields invalid.</code>
 
         }
 
