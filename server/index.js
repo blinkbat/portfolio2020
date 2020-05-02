@@ -13,6 +13,9 @@ const PORT = process.env.PORT || 3001;
 const compression = require( 'compression' );
 app.use( compression() );
 
+const enforce = require('express-sslify');
+app.use(enforce.HTTPS());
+
 // Define middleware here
 app.use( express.urlencoded({ extended: true }) );
 app.use( express.json() );
