@@ -13,8 +13,11 @@ const PORT = process.env.PORT || 3001;
 const compression = require( 'compression' );
 app.use( compression() );
 
-const enforce = require('express-sslify');
-app.use(enforce.HTTPS());
+// const enforce = require('express-sslify');
+// app.use(enforce.HTTPS());
+
+const sslRedirect = require( 'heroku-ssl-redirect' );
+app.use( sslRedirect() );
 
 // Define middleware here
 app.use( express.urlencoded({ extended: true }) );
