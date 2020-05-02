@@ -14,8 +14,8 @@ const Contact = () => {
     // helpers
 
     // note that the target iterator is generic -- don't change
-    const handleInput = e => {
-        const { name, value } = e.target;
+    const handleInput = event => {
+        const { name, value } = event.target;
         setInfo({ ...formInfo, [name]: value });
     }
 
@@ -38,6 +38,7 @@ const Contact = () => {
                     setInfo({ email: '', name: '', message: '' });
                     setFeedback( 'success' );
                     return res;
+                    
                 })
                 .catch( err => console.log( err ) );
 
