@@ -20,7 +20,7 @@ const Design = () => {
 
     // useEffect on mount to randomize images
     const shuffleArray = arr => {
-        for ( let i = arr.length - 1; i > 0; i--) {
+        for ( let i = arr.length - 1; i > 0; i-- ) {
             const j = Math.floor( Math.random() * (i + 1) );
             [ arr[i], arr[j] ] = [ arr[j], arr[i] ];
         }
@@ -34,7 +34,7 @@ const Design = () => {
     // helpers
     const showModal = ( title, img ) => {
 
-        // do nothing on mobile, corresponds to css breakpt
+        // do nothing on mobile, 768 corresponds to css breakpt
         if( window.innerWidth >= 768 ) {
 
             setModal({ title, img });

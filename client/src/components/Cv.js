@@ -83,6 +83,9 @@ const Cv = () => {
                     <br />
                     &middot; Clients include:
                     <ul style={{ marginLeft: '1rem', listStyle: "none" }}>
+                        <li><a href="https://manhattaneyenyc.com" target="_blank" rel="noopener noreferrer">
+                            Manhattan Eye
+                        </a></li>
                         <li><a href="https://purerelief.com/myreliefcbdquiz" target="_blank" rel="noopener noreferrer">
                             Pure Relief
                         </a></li>
